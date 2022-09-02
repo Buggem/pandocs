@@ -246,8 +246,26 @@ Code  | Destination
 This byte is used in older (pre-SGB) cartridges to specify the game's publisher.
 However, the value `$33` indicates that the [New Licensee Code](<#0144-0145 - New Licensee Code>) must be considered instead.
 (The SGB will ignore any [command packets](<#Command Packet Transfers>) unless this value is `$33`.)
+Most of these codes have the same publisher as the [New Licensee Code](<#0144-0145 - New Licensee Code>), but there are some exceptions for this.
 
-Here is [a list of known Old Licensee Codes](https://raw.githubusercontent.com/gb-archive/salvage/master/txt-files/gbrom.txt).
+Code  | Publisher
+------|-----------------
+`00`  | None
+`01`  | Nintendo R&D1
+`08`  | Capcom
+`09`  | Hot-B
+`0A`  | Jaleco
+`0B`  | coconuts
+`0C`  | Elite Systems
+`13`  | Electronic Arts
+`18`  | Hudonsoft
+`19`  | ITC Entertainment
+`1A`  | Yanoman
+`1D`  | Clary
+`1F`  | Virgin
+`24`  | PSM Complete
+`25`  | San-X
+`28`  | Kotobuki Systems
 
 ## 014C - Mask ROM Version number
 
